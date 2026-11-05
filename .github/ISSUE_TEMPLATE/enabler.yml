@@ -43,8 +43,8 @@ body:
         - label: Zero regression on existing features
         - label: Performance / security criteria verified
         - label: Documentation updated in /docs
-      description: Define concrete, testable Given-When-Then scenarios.
       label: additional Acceptance Criteria
+      description: Define concrete, testable Given-When-Then scenarios.
       placeholder: |
         ```gherkin
         Scenario: [Title of happy path scenario]
