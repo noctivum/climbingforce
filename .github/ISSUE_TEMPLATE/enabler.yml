@@ -44,6 +44,7 @@ body:
         - label: Performance / security criteria verified
         - label: Documentation updated in /docs
       description: Define concrete, testable Given-When-Then scenarios.
+      label: additional Acceptance Criteria
       placeholder: |
         ```gherkin
         Scenario: [Title of happy path scenario]
