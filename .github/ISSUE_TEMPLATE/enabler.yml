@@ -1,6 +1,6 @@
 name: "🧱 Enabler Story (Architecture / Infrastructure)"
 description: Technical prerequisite, architectural runway, or spike
-title: "enabler: "
+title: "[enabler]: "
 labels: ["enabler", "tech-debt"]
 body:
   - type: markdown

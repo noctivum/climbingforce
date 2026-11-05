@@ -1,6 +1,6 @@
 name: "🚀 User Story"
 description: Propose a user-facing increment of value
-title: "feat: "
+title: "[story]: "
 labels: ["story", "needs-refinement"]
 body:
   - type: markdown
