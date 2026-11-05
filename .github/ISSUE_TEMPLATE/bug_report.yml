@@ -1,0 +1,66 @@
+name: "🐛 Bug Report"
+description: File a reproducible bug or unexpected behavior report
+title: "fix: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue! Please provide detailed, reproducible steps so we can diagnose and fix it quickly.
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Problem Summary
+      description: A clear and concise description of what the bug is.
+      placeholder: "e.g., Clicking the complete set button on mobile does not increment the session progress bar."
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Exact sequential steps to trigger the bug.
+      placeholder: |
+        1. Go to 'Workouts' -> select 'Max Hangs Day 1'
+        2. Disconnect internet (simulate offline)
+        3. Click 'Complete Set 1'
+        4. Observe error state / crash
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What should have happened instead?
+      placeholder: "The set should be marked as done, cached in LocalStorage, and queued for offline sync."
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity / Impact
+      description: How critical is this issue for user workflows?
+      options:
+        - "Low (Cosmetic, minor typo, or subtle alignment quirk)"
+        - "Medium (Feature impaired, but simple workaround exists)"
+        - "High (Core functionality blocked, data lost, or app crash)"
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment & Device Details
+      description: OS, browser version, screen size, or deployment commit.
+      placeholder: |
+        - Device: iPhone 14 Pro / Desktop macOS Sonoma
+        - Browser: Safari 17.4 / Chrome 124
+        - App Version / Commit: v0.1.0 (or commit hash)
+    validations:
+      required: false
+  - type: textarea
+    id: logs-screenshots
+    attributes:
+      label: Screenshots, Screen Recordings, or Console Logs
+      description: Drag and drop images or paste browser console errors here.
+    validations:
+      required: false

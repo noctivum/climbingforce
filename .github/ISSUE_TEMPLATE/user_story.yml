@@ -1,0 +1,61 @@
+name: "🚀 User Story"
+description: Propose a user-facing increment of value
+title: "feat: "
+labels: ["story", "needs-refinement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please formulate the user story using the classic persona format and define testable Gherkin acceptance criteria.
+  - type: textarea
+    id: user-story-statement
+    attributes:
+      label: User Story Statement
+      description: Who is this for, what capability is needed, and what is the underlying value?
+      placeholder: |
+        As a [type of user / persona]
+        I want [an action or capability]
+        so that [business or user value is delivered]
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria (Gherkin BDD)
+      description: Define concrete, testable Given-When-Then scenarios.
+      placeholder: |
+        ```gherkin
+        Scenario: [Title of happy path scenario]
+          Given [initial context or state]
+          When [action taken by user]
+          Then [expected outcome / state change]
+
+        Scenario: [Title of edge case / error scenario]
+          Given [initial context]
+          When [invalid action occurs]
+          Then [appropriate feedback or graceful fallback]
+        ```
+    validations:
+      required: true
+  - type: checkboxes
+    id: definition-of-ready
+    attributes:
+      label: Definition of Ready Checklist (Before Sprint Planning)
+      description: Verify story completeness before moving to Sprint Backlog.
+      options:
+        - label: User story follows the INVEST principle
+        - label: Value proposition is clear and unambiguous
+        - label: Acceptance criteria written and agreed upon
+        - label: Dependencies / technical blockers identified
+        - label: Estimated (Story Points / T-Shirt size)
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Implementation Tasks (Optional Breakdown)
+      description: Preliminary technical tasks or steps.
+      placeholder: |
+        - [ ] Task 1: UI component
+        - [ ] Task 2: Service / API integration
+        - [ ] Task 3: Unit & integration tests
+    validations:
+      required: false

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 Noctivum Architecture & Style Guide
+    url: https://github.com/noctivum/climbingforce/docs
+    about: Read design system tokens and architectural decision records before opening an enabler issue.

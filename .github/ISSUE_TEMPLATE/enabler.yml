@@ -1,0 +1,55 @@
+name: "🧱 Enabler Story (Architecture / Infrastructure)"
+description: Technical prerequisite, architectural runway, or spike
+title: "enabler: "
+labels: ["enabler", "tech-debt"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for architectural runway, technical enablers, infrastructure changes, or spikes.
+  - type: textarea
+    id: enabler-context
+    attributes:
+      label: Enabler Context & Purpose
+      description: Formulate the architectural goal and what future capabilities it enables.
+      placeholder: |
+        As a [system architect / developer / security officer]
+        I want to [introduce an architectural capability, refactor, or infrastructure component]
+        so that [future business stories are enabled / performance and security standards are met]
+    validations:
+      required: true
+  - type: input
+    id: target-area
+    attributes:
+      label: Target Area
+      description: Subsystem, architectural layer, or module affected.
+      placeholder: "e.g., Persistence Layer, CI/CD, Design Tokens, Auth"
+    validations:
+      required: true
+  - type: input
+    id: adr-reference
+    attributes:
+      label: Architectural Decision Reference (ADR)
+      description: Path to related ADR if applicable.
+      placeholder: "e.g., docs/adr/0002-decoupled-storage-strategy.md"
+    validations:
+      required: false
+  - type: checkboxes
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      options:
+        - label: Architectural runway established (clean interfaces and abstractions)
+        - label: Zero regression on existing features
+        - label: Performance / security criteria verified
+        - label: Documentation updated in /docs
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Tasks & Implementation Steps
+      placeholder: |
+        - [ ] Step 1: Implementation of core interface
+        - [ ] Step 2: Automated verification / benchmarks
+        - [ ] Step 3: Migration of affected consumers
+    validations:
+      required: false
